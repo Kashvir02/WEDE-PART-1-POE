@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>enquiry — spar [branch]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="send an enquiry to spar [branch].">
+</head>
+<body>
+  <a class="skip-link" href="#main">skip to content</a>
+
+  <header class="site-header">
+    <div>
+      <a class="logo" href="index.html" aria-label="spar home">
+        <img src="images/ui/logo-spar.svg" alt="spar logo" width="120" height="40">
+      </a>
+      <nav class="site-nav" aria-label="primary navigation">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="products.html">products</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>make an enquiry</h1>
+
+    <!-- simple form for part 1. client side validation comes in part 3 -->
+    <!-- docs: forms mdn https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form -->
+    <form id="form" action="#" method="post" aria-describedby="form-help">
+      <p id="form-help">fields marked * are required.</p>
+
+      <label for="purpose">purpose *</label>
+      <select id="purpose" name="purpose" required> <!-- docs: select mdn https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select -->
+        <option value="">select…</option>
+        <option value="product">product enquiry</option>
+        <option value="special-order">special order</option>
+        <option value="loyalty">loyalty program</option>
+        <option value="sponsorship">sponsorship or community</option>
+      </select>
+
+      <label for="name">full name *</label>
+      <input id="name" name="name" type="text" required> <!-- docs: input mdn https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+
+      <label for="email">email *</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">message *</label>
+      <textarea id="message" name="message" rows="6" required></textarea> <!-- docs: textarea mdn https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea -->
+
+      <label>
+        <input type="checkbox" name="consent" required> i consent to contact regarding this enquiry *
+      </label>
+
+      <button type="submit">submit enquiry</button> <!-- docs: button mdn https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button -->
+    </form>
+  </main>
+  <!--
+  TITLE: SPAR PRODUCTS
+    AUTHOR:SPAR
+    DATE ACCESED:27 August 2025
+    DATE PUBLISHED :NONE
+    URL:https://www.spar.co.za/SPAR-Products-->
