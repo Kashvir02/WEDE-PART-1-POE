@@ -1,1 +1,213 @@
-/*Not implemented yet*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #59f107;
+  color: #333;
+  padding-top: 60px; /* space for fixed nav */
+}
+
+/* Typography styles */
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Layout structure */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navigation menu */
+nav {
+  background: #333;
+  color: #14c354;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #23f50c;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Pseudo-classes */
+nav ul li a:hover {
+  color: #ff0000;
+}
+nav ul li a:active {
+  color: #ff5722;
+}
+
+/* Buttons */
+button, .btn {
+  background: #f30e0e;
+  color: #02c01e;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background: #e60000;
+}
+button:active, .btn:active {
+  background: #ff0000;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Sections */
+section {
+  padding: 40px 0;
+}
+
+header, footer {
+  text-align: center;
+  background: #222;
+  color: rgb(4, 247, 105);
+  padding: 20px;
+}
+
+/* Forms (contact.html) */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #05f609;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #63f700;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Products Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background: #04d927;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Responsive Design: Layout */
+@media (max-width: 992px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    padding-top: 100px;
+  }
+}
+
+/* Responsive Design: Typography */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive Design: Navigation */
+@media (max-width: 600px) {
+  nav {
+    padding: 10px;
+  }
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+
+/* Responsive Design: Images */
+@media (max-width: 768px) {
+  img {
+    border-radius: 5px;
+  }
+}
+
+/*Title: How to add css
+Date Published: no date
+Date Accessesd: 28 September 2025
+URL: https://www.w3schools.com/html/html_css.asp
+Author: HTML style css /*
+
+/*Title:How to add css
+Date Published :None
+Date Accessesd: 28 September 2025
+Url:https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started
+Author: Css Getting started/*
+
+/*Title: Linkig Css
+Date Published : None
+Date Accessesd : 28 September 2025
+Url:https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started
+Author : By Haroon Ahamed Kitthu /*
+
